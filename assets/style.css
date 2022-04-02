@@ -69,3 +69,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Css Classes  */
+.container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Perfil */

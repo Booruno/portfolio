@@ -9,14 +9,64 @@
       href="assets/imgs/favicon.png"
       type="image/x-icon"
     />
-    <!-- Remix icons cdn -->
+    <!-- Bootstrap icons cdn -->
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
     <!-- Css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Bruno Cunha - Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <header class="perfil container">
+      <div class="perfil-container grid">
+        <div class="perfil-dados">
+          <div class="perfil-borda">
+            <div class="perfil-img">
+              <img src="assets/imgs/perfil.png" alt="" srcset="" />
+            </div>
+          </div>
+          <h2 class="perfil-nome">Bruno Cunha</h2>
+          <h3 class="perfil-profissao">Front-End Developer</h3>
+          <ul class="perfil-sociais">
+            <a
+              href="https://github.com/Booruno"
+              target="_blank"
+              class="perfil-social-link"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/booruno/"
+              target="_blank"
+              class="perfil-social-link"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </ul>
+        </div>
+        <div class="perfil-infos grid">
+          <div class="perfil-group-items">
+            <h3 class="perfil-info-numero">~1</h3>
+            <p class="perfil-info-desc">Ano de <br />Experiência</p>
+          </div>
+          <div class="perfil-group-items">
+            <h3 class="perfil-info-numero">+20</h3>
+            <p class="perfil-info-desc">Repositórios</p>
+          </div>
+        </div>
+        <div class="perfil-btns">
+          <a download="" href="files/CURRICULO.pdf" class="button"
+            >Download Currículo <i class="bi bi-cloud-arrow-down-fill"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer main"></footer>
+
+    <!-- Javascript -->
+    <script src="assets/functions.js"></script>
+  </body>
 </html>
