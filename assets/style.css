@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 :root {
-  --hue: 174;
-  --sat: 63%;
-  --lig: 62%;
+  --hue: 209;
+  --sat: 100%;
+  --lig: 38%;
 
   /* cor */
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: (var(--hue), var(--sat), 58%);
+  --first-color-alt: hsl(var(--hue), var(--sat), 30%);
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
@@ -82,3 +82,110 @@ img {
 }
 
 /* Perfil */
+.perfil {
+  position: relative;
+  padding-top: 3.5rem;
+}
+
+.perfil-container {
+  row-gap: 2rem;
+}
+
+.perfil-dados {
+  display: grid;
+  text-align: center;
+}
+
+.perfil-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.perfil-borda {
+  border: 3.5px solid var(--first-color);
+  justify-self: center;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.perfil-nome {
+  font-size: var(--h2-font-size);
+}
+
+.perfil-profissao {
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.perfil-sociais {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.75rem;
+}
+
+.perfil-social-link {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  transition: 0.3s;
+}
+.perfil-social-link:hover {
+  color: var(--first-color);
+}
+
+.perfil-infos {
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.perfil-group-items {
+  text-align: center;
+}
+
+.perfil-info-numero {
+  font-size: var(--normal-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.perfil-info-desc {
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+}
+
+/* Botoes */
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1.15rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.25);
+}
+
+.button i {
+  font-size: 1.25rem;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.perfil-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
