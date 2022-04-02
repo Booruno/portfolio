@@ -6,7 +6,7 @@
   --sat: 63%;
   --lig: 62%;
 
-  /* color related */
+  /* cor */
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   --first-color-alt: (var(--hue), var(--sat), 58%);
   --title-color: hsl(var(--hue), 12%, 15%);
@@ -16,7 +16,7 @@
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #fff;
 
-  /* font related */
+  /* font relacionado */
   --body-font: "Roboto", sans-serif;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -25,7 +25,7 @@
   --smaller-font-size: 0.75rem;
 }
 
-/* Responsive */
+/* Responsivo */
 @media screen and (min-width: 968px) {
   :root {
     --h2-font-size: 1.5rem;
@@ -34,4 +34,38 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
+}
+
+/* Padraos*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
